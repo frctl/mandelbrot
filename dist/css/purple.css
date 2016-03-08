@@ -1421,17 +1421,17 @@ h6 {
     margin-right: 5px; }
 
 .Status--labelled .Status-label {
-  -webkit-margin-end: 6px;
-     -moz-margin-end: 6px;
-          margin-inline-end: 6px;
+  -webkit-margin-end: 10px;
+     -moz-margin-end: 10px;
+          margin-inline-end: 10px;
   display: inline-block;
   font-size: 13px;
   text-transform: uppercase;
   color: #888; }
   [dir="ltr"] .Status--labelled .Status-label {
-    margin-right: 6px; }
+    margin-right: 10px; }
   [dir="rtl"] .Status--labelled .Status-label {
-    margin-left: 6px; }
+    margin-left: 10px; }
 
 .Status--large .Status-dot {
   width: 14px;

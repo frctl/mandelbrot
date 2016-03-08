@@ -33,7 +33,7 @@
 
 .Status--labelled {
     .Status-label {
-        @include margin-inline('end', 6px);
+        @include margin-inline('end', 10px);
         display: inline-block;
         font-size: 13px;
         text-transform: uppercase;
