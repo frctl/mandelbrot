@@ -8,8 +8,9 @@
         margin: 0.7em 0 1.4em 0;
     }
 
-    ul, ol {
-        @include padding-inline('start', 1.3em);
+    ul,
+    ol {
+        @include padding-inline(start, 1.3em);
     }
 
     li {
@@ -27,10 +28,11 @@
     h1 {
         padding-bottom: 8px;
         border-bottom: 1px solid $color-alpha-tint-light;
-        margin: 1.2em 0 1.0em 0;
+        margin: 1.2em 0 1em 0;
     }
 
-    h2, h3 {
+    h2,
+    h3 {
         margin: 1.6em 0 0.6em 0;
     }
 
@@ -62,17 +64,18 @@
         width: 100%;
         margin: 1.2em 0;
         font-size: 15px;
+
         caption {
             font-style: italic;
             font-size: 14px;
             color: $color-beta;
             padding: 0.6em 0.9em;
-            // display: block;
             text-align: left;
         }
     }
 
-    td, th {
+    td,
+    th {
         padding: 0.6em 0.9em;
         border: 1px solid $color-alpha-tint-lighter;
         text-align: left;
@@ -80,8 +83,5 @@
 
     a {
         @include link-default($color-accent, underline);
-        // &:hover {
-        //     text-decoration: underline;
-        // }
     }
 }

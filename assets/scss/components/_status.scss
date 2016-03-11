@@ -2,13 +2,16 @@
     display: flex;
     align-items: center;
 }
+
 .Status-dots {
     display: flex;
     align-items: center;
 }
+
 .Status-dot + .Status-dot {
-    @include margin-inline('start', 3px);
+    @include margin-inline(start, 3px);
 }
+
 .Status-dot {
     width: 8px;
     height: 8px;
@@ -23,17 +26,18 @@
         font-size: 11px;
         text-transform: uppercase;
         color: #fff;
-        padding: 0.15em 1.0em;
+        padding: 0.15em 1em;
         border-radius: 2em;
     }
+
     .Status-label + .Status-label {
-        @include margin-inline('start', 5px);
+        @include margin-inline(start, 5px);
     }
 }
 
 .Status--labelled {
     .Status-label {
-        @include margin-inline('end', 10px);
+        @include margin-inline(end, 10px);
         display: inline-block;
         font-size: 13px;
         text-transform: uppercase;

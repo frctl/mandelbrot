@@ -1,4 +1,3 @@
-
 .Frame {
     height: 100%;
     width: 100%;
@@ -8,8 +7,10 @@
     position: relative;
     flex-direction: column;
     min-width: 280px;
+
     &.is-resizing {
         cursor: grabbing;
+
         .Frame-body,
         .Frame-panel {
             user-select: none;
@@ -17,24 +18,20 @@
         }
     }
 }
-// .Frame-header {
-//     float: left;
-//     width: 100%;
-//     flex-grow: 0;
-//     flex-shrink: 0;
-//     height: 50px;
-// }
+
 .Frame-body {
     display: flex;
     flex-direction: row-reverse;
     flex-grow: 1;
     height: 100%;
+
     @include mq($until: navCollapse) {
-        @include margin-inline('end', 230px);
+        @include margin-inline(end, 230px);
         transition: none;
         transform: translate3d(-230px, 0, 0);
     }
 }
+
 .Frame-inner {
     position: absolute;
     height: 100%;
@@ -52,47 +49,48 @@
     position: relative;
     -webkit-overflow-scrolling: touch;
 }
+
 .Frame-panel--sidebar {
-    @include border-inline('end', 1px solid $color-alpha-tint-light);
+    @include border-inline(end, 1px solid $color-alpha-tint-light);
     flex: 0 0 auto;
     background-color: $color-gamma;
     width: 230px;
     min-width: 230px;
     max-width: 400px;
     padding: 25px 0 40px 0;
+
     @include mq($until: navCollapse) {
         max-width: 230px;
     }
 }
+
 .Frame-panel--main {
+    @include margin-inline(start, -20px);
     flex: 1 1 auto;
     overflow: auto;
     position: relative;
     z-index: 1;
     padding-bottom: 1px;
-    [dir="ltr"] & {
-        margin-left: -20px;
-    }
-    [dir="rtl"] & {
-        margin-right: -20px;
-    }
+
     &.is-loading {
-        background-image: url('../img/loader.svg');
+        background-image: url("../img/loader.svg");
         background-repeat: no-repeat;
         background-position: 50%;
+
         .Frame-inner {
             display: none;
         }
     }
 }
+
 .Frame-handle {
+    @include dragHandle;
     flex: 0 0 auto;
     position: relative;
     z-index: 2;
     width: 20px;
     cursor: ew-resize;
     height: 100%;
-    background: transparent url('../img/icon-drag--vertical.svg') no-repeat 50% 45%;
+    background: transparent url("../img/icon-drag--vertical.svg") no-repeat 50% 45%;
     background-size: 3px 16px;
-    @include dragHandle;
 }

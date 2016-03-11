@@ -28,11 +28,11 @@ gulp.task('clean:js', function() {
 // CSS
 gulp.task('css', ['clean:css'], function() {
   return gulp.src('./assets/scss/schemes/*.scss')
-    .pipe(sassGlob())
-    .pipe(sass().on('error', sass.logError))
     .pipe(stylelint({
         reporters: [stylelintReporter()]
     }))
+    .pipe(sassGlob())
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
         browsers: ['last 5 versions']
     }))

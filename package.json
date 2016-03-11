@@ -40,6 +40,7 @@
     "normalize.css": "^3.0.3",
     "open-sans-fontface": "^1.4.0",
     "sass-mq": "^3.2.6",
+    "stylelint-config-standard": "latest",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "vinyl-transform": "^1.0.0",

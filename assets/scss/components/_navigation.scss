@@ -1,6 +1,7 @@
 .Navigation {
     display: inline-block;
     min-width: 100%;
+
     .Tree {
         .Status-dot {
             position: relative;
@@ -8,8 +9,10 @@
         }
     }
 }
+
 .Navigation-group {
     @include clearfix;
+
     & + & {
         margin-top: 25px;
     }

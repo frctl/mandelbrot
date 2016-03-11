@@ -1,10 +1,12 @@
 .Document {
     padding: 30px;
     max-width: 58em;
+
     @include mq($until: navCollapse) {
         padding: 20px;
     }
 }
+
 .Document-header {
     display: flex;
     width: 100%;
@@ -12,6 +14,7 @@
     border-bottom: 1px solid $color-alpha-tint-light;
     margin-bottom: 1.2em;
 }
+
 .Document-title {
     margin: 0;
     font-size: 28px;
