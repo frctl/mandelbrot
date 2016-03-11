@@ -447,63 +447,63 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 /* Hack */
 @font-face {
-  font-family: 'Hack';
+  font-family: Hack;
   src: url("../fonts/hack-regular-webfont.woff2") format("woff2"), url("../fonts/hack-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Hack';
+  font-family: Hack;
   src: url("../fonts/hack-bold-webfont.woff2") format("woff2"), url("../fonts/hack-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Hack';
+  font-family: Hack;
   src: url("../fonts/hack-italic-webfont.woff2") format("woff2"), url("../fonts/hack-italic-webfont.woff") format("woff");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Hack';
+  font-family: Hack;
   src: url("../fonts/hack-bolditalic-webfont.woff2") format("woff2"), url("../fonts/hack-bolditalic-webfont.woff") format("woff");
   font-weight: bold;
   font-style: italic; }
 
 /* Open Sans */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/OpenSans-Italic.woff2") format("woff2"), url("../fonts/OpenSans-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/OpenSans-Semibold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/OpenSans-SemiboldItalic.woff2") format("woff2"), url("../fonts/OpenSans-SemiboldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic; }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box; }
 
 html {
   color: #505562;
   background: white;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   height: 100%;
   width: 100%;
   position: relative;
@@ -570,7 +570,7 @@ a {
 
 code,
 pre {
-  font-family: Hack, Consolas, Monaco, 'Andale Mono', monospace;
+  font-family: Hack, Consolas, Monaco, "Andale Mono", monospace;
   font-size: 14px;
   line-height: 1.71429; }
 
@@ -579,12 +579,12 @@ pre {
   height: 3px; }
 
 ::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px; }
+  width: 0;
+  height: 0; }
 
 ::-webkit-scrollbar-thumb {
   background: rgba(46, 48, 56, 0.1);
-  border: 0px none transparent;
+  border: 0 none transparent;
   border-radius: 20px; }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -595,7 +595,7 @@ pre {
 
 ::-webkit-scrollbar-track {
   background: transparent;
-  border: 0px none transparent;
+  border: 0 none transparent;
   border-radius: 0; }
 
 ::-webkit-scrollbar-track:hover {
@@ -1044,7 +1044,7 @@ h6 {
     position: relative;
     top: 1px; }
 
-.Navigation-group:after {
+.Navigation-group::after {
   content: "";
   display: table;
   clear: both; }

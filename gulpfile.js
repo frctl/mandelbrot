@@ -32,7 +32,7 @@ gulp.task('css', ['clean:css'], function() {
         reporters: [stylelintReporter()]
     }))
     .pipe(sassGlob())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({includePaths: 'node_modules'}).on('error', sass.logError))
     .pipe(autoprefixer({
         browsers: ['last 5 versions']
     }))
