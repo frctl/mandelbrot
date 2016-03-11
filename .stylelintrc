@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "at-rule-empty-line-before": [
+      "always", {
+        "except": [
+          "blockless-group",
+          "first-nested"
+        ]
+      }
+    ],
+    "declaration-colon-newline-after": "always-multi-line",
+    "function-url-quotes": "none",
+    "indentation": 4
+  }
+}
