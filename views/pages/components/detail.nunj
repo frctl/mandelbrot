@@ -113,12 +113,14 @@
                 </div>
             </div>
 
-            <div class="Browser-panel Browser-notes Prose" data-role="tab-panel" id="browser-{{ entity.id }}-panel-notes">
-                {% if entity.notes %}
-                {{ entity.notes }}
-                {% else %}
-                <p class="Browser-isEmptyNote">There are no notes for this item.</p>
-                {% endif %}
+            <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-{{ entity.id }}-panel-notes">
+                <div class="Prose">
+                    {% if entity.notes %}
+                    {{ entity.notes }}
+                    {% else %}
+                    <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+                    {% endif %}
+                </div>
             </div>
 
             {# <div class="Browser-panel Browser-meta" data-role="tab-panel" id="browser-{{ entity.id }}-panel-meta">

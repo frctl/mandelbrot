@@ -50,15 +50,18 @@
 @mixin font($preset) {
     @if $preset == title {
         font: bold 1.75rem/#{(32 / 28)} $font-family-sans-serif;
+        font-feature-settings: "dlig" 1;
         letter-spacing: -0.025em;
     }
 
     @if $preset == heading {
         font: bold 1.3125rem/#{(24 / 21)} $font-family-sans-serif;
+        font-feature-settings: "dlig" 1;
     }
 
     @if $preset == subHeading {
         font: bold 1.125rem/#{(24 / 18)} $font-family-sans-serif;
+        font-feature-settings: "dlig" 1;
     }
 
     @if $preset == body {
@@ -73,9 +76,9 @@
         font: normal 0.8125rem/#{(20 / 13)} $font-family-sans-serif;
     }
 
-    @if $preset == navigationHeading {
+    @if $preset == caption {
         font: normal 0.6875rem/#{(20 / 11)} $font-family-sans-serif;
-        letter-spacing: 0.5em;
+        letter-spacing: 0.075em;
         text-transform: uppercase;
     }
 }

@@ -1,6 +1,8 @@
 .Prose {
     @include font(body);
     max-width: 44em;
+    font-feature-settings: "liga", "dlig", "kern", "onum";
+    hanging-punctuation: first;
 
     > * {
         margin-bottom: 0.75em;
@@ -56,6 +58,10 @@
         margin: 2em 0;
     }
 
+    abbr {
+        font-feature-settings: "c2sc";
+    }
+
     code,
     code pre {
         background-color: $color-alpha-tint-lightest;
@@ -72,9 +78,10 @@
     }
 
     table {
-        border-collapse: collapse;
         width: 100%;
         margin: 1rem -0.5rem;
+        border-collapse: collapse;
+        font-feature-settings: "lnum" 1, "tnum" 1;
     }
 
     caption {
