@@ -49,12 +49,12 @@
 // Typography
 @mixin font($preset) {
     @if $preset == title {
-        font: bold 1.75rem/(32 / 28) $font-family-sans-serif;
+        font: bold 1.75rem/#{(32 / 28)} $font-family-sans-serif;
         letter-spacing: -0.025em;
     }
 
     @if $preset == heading {
-        font: bold 1.3125rem/(24 / 21) $font-family-sans-serif;
+        font: bold 1.3125rem/#{(24 / 21)} $font-family-sans-serif;
     }
 
     @if $preset == subHeading {
