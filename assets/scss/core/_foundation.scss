@@ -1,23 +1,24 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html {
-    color: $color-beta;
-    background: $color-delta;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    position: relative;
     height: 100%;
     width: 100%;
-    position: relative;
+    background: $color-delta;
+    box-sizing: border-box;
+    color: $color-beta;
     font-size: 16px;
+    font-family: $font-family-sans-serif;
     line-height: (24/16);
 }
 
 body {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 blockquote,
@@ -52,8 +53,8 @@ button:focus {
 }
 
 fieldset {
-    border: 0;
     margin: 0;
+    border: 0;
     padding: 0;
 }
 
@@ -63,9 +64,9 @@ iframe {
 
 ol,
 ul {
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 a {
@@ -90,25 +91,25 @@ a {
 
 code,
 pre {
-    font-family: Hack, Consolas, Monaco, "Andale Mono", monospace;
-    font-size: 14px;
+    font-family: $font-family-monospace;
+    font-size: 0.875rem; //14px
     line-height: (24/14);
 }
 
 ::-webkit-scrollbar {
-    width: 3px;
-    height: 3px;
+    height: 0.25rem;
+    width: 0.25rem;
 }
 
 ::-webkit-scrollbar-button {
-    width: 0;
     height: 0;
+    width: 0;
 }
 
 ::-webkit-scrollbar-thumb {
     background: $color-alpha-tint-lighter;
     border: 0 none transparent;
-    border-radius: 20px;
+    border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -148,23 +149,20 @@ h6 {
 }
 
 h1 {
-    font-size: 28px;
-    line-height: (32/28);
+    @include font(title);
 }
 
 h2 {
-    font-size: 21px;
-    line-height: (24/21);
+    @include font(heading);
 }
 
 h3 {
-    font-size: 18px;
-    line-height: (24/18);
+    @include font(subHeading);
 }
 
 h4,
 h5,
 h6 {
-    font-size: 16px;
-    line-height: (24/16);
+    @include font(body);
+    font-weight: bold;
 }

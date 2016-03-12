@@ -8,13 +8,11 @@
 }
 
 .Browser-controls {
-    flex: 0 0 auto;
     display: flex;
+    flex: 0 0 auto;
     align-items: center;
     width: 100%;
-    background: $color-gamma;
-    padding: 0 15px;
-    border-bottom: 1px solid $color-alpha-tint-light;
+    box-shadow: inset 0 -1px 0 0 $color-alpha-tint-lighter;
 }
 
 .Browser-tabs {
@@ -25,66 +23,44 @@
 }
 
 .Browser-tab {
-    // display: inline-block;
+    box-shadow: inset -1px 0 0 $color-alpha-tint-lighter;
+    border-top: 2px solid transparent;
+
     a {
+        @include font(navigation);
         @include link-default($color-beta, none);
-        font-size: 14px;
-        padding: 10px 5px;
         display: block;
-        font-weight: bold;
-    }
-
-    & + & {
-        @include margin-inline(start, 20px);
-    }
-
-    & + &:last-child {
-        // margin-left: auto;
+        padding: 0.625rem 0.75rem;
     }
 
     svg {
-        @include margin-inline(end, 5px);
-        position: relative;
-        top: 3px;
-        display: none;
+        @include margin-inline(end, 0.125rem);
+        vertical-align: middle;
     }
-    &.is-active a {
-        @include link-default($color-alpha, none);
-        border-bottom: 2px solid $color-beta;
-    }
-    &.is-disabled {
+
+    &.is-active {
+        background-color: $color-gamma;
+        border-top: 2px solid $color-accent;
+
         a {
-            opacity: 0.6;
-            font-weight: normal;
+            font-weight: bold;
         }
     }
-}
 
-// .Browser-tab--meta {
-//     @include margin-inline('start', auto);
-// }
-
-.Browser-actions {
-    @include margin-inline(start, auto);
-    display: none;
-}
-
-.Browser-action {
-    display: inline-block;
-
-    a {
-        font-size: 14px;
-        display: block;
+    &.is-disabled {
+        a {
+            opacity: 0.5;
+        }
     }
 }
 
 .Browser-panel {
     flex: 1 1 auto;
-    width: 100%;
+    display: none;
     overflow: auto;
     position: relative;
-    padding: 15px;
-    display: none;
+    width: 100%;
+    background-color: $color-gamma;
 
     &.is-active {
         display: block;
@@ -101,8 +77,8 @@
 }
 
 .Browser-codeHeader {
-    margin-bottom: 10px;
     flex: 0 0 auto;
+    padding: 0.5rem;
 }
 
 .Browser-files {
@@ -114,8 +90,8 @@
 }
 
 .Browser-fileSelector {
+    @include font(navigation);
     border: 1px solid $color-alpha-tint-light;
-    font-size: 16px;
 }
 
 .Browser-fileContent {
@@ -129,13 +105,10 @@
 }
 
 .Browser-notes {
-    // position: relative;
-    // height: 100%;
-    // overflow: auto;
-    // padding: 10px 15px;
+    padding: 0.75rem;
 }
 
 .Browser-isEmptyNote {
     font-style: italic;
-    color: #999;
+    color: $color-alpha-tint-light;
 }
