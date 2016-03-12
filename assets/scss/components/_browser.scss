@@ -35,7 +35,6 @@
 
     svg {
         @include margin-inline(end, 0.125rem);
-        vertical-align: middle;
     }
 
     &.is-active {

@@ -96,9 +96,14 @@ pre {
     line-height: (24/14);
 }
 
+svg {
+    fill: currentColor;
+    vertical-align: middle;
+}
+
 ::-webkit-scrollbar {
-    height: 0.25rem;
-    width: 0.25rem;
+    height: 0.125rem;
+    width: 0.125rem;
 }
 
 ::-webkit-scrollbar-button {

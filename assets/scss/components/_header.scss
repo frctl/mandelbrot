@@ -1,31 +1,32 @@
 .Header {
     display: flex;
     align-items: center;
-    background-color: $color-accent;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     position: relative;
-    color: #fff;
     z-index: 10;
+    background-color: $color-accent;
+    box-shadow: 0 2px 2px $color-alpha-tint-light;
     text-overflow: ellipsis;
+    color: white;
 }
 
 .Header-title {
     @include link-default($color-delta, none);
-    font-size: 18px;
     position: relative;
     top: -1px;
-    padding: 5px 15px;
+    padding: 0.75rem 1rem;
+    font-size: 1.3125rem; // 21px
+    line-height: (24 / 21);
     vertical-align: middle;
     white-space: nowrap;
 }
 
 .Header-button {
     @include border-inline(end, 1px solid $color-alpha-tint-light);
-    touch-action: manipulation;
-    border: 0;
-    height: 50px;
-    width: 50px;
     display: block;
+    border: 0;
+    height: 3rem;
+    width: 3rem;
+    touch-action: manipulation;
 
     span {
         display: none;
@@ -48,7 +49,6 @@
 }
 
 .Header-navToggle {
-    background-size: 20px 20px;
     background-image: url("../img/icon-close-white.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
