@@ -10,10 +10,10 @@ html {
     width: 100%;
     background: $color-delta;
     box-sizing: border-box;
+    font: 16px/#{(24/16)} $font-family-sans-serif;
     color: $color-beta;
-    font-size: 16px;
-    font-family: $font-family-sans-serif;
-    line-height: (24/16);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {

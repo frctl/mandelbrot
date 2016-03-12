@@ -506,10 +506,10 @@ html {
   width: 100%;
   background: white;
   box-sizing: border-box;
+  font: 16px / 1.5 "Open Sans", Helvetica, Arial, sans-serif;
   color: #505562;
-  font-size: 16px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  line-height: 1.5; }
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
 
 body {
   height: 100%;
@@ -1063,7 +1063,7 @@ h6 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem 0;
+  padding: 0.75rem 0;
   margin: 0 0.75rem;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -1407,7 +1407,7 @@ h6 {
   border-radius: 100%; }
 
 .Status--tag .Status-label {
-  font: normal 0.6875rem / 1.81818 "Open Sans", Helvetica, Arial, sans-serif;
+  font: bold 0.6875rem / 1.81818 "Open Sans", Helvetica, Arial, sans-serif;
   letter-spacing: 0.075em;
   text-transform: uppercase;
   display: inline-block;
@@ -1425,7 +1425,7 @@ h6 {
     margin-right: 0.25rem; }
 
 .Status--labelled .Status-label {
-  font: normal 0.6875rem / 1.81818 "Open Sans", Helvetica, Arial, sans-serif;
+  font: bold 0.6875rem / 1.81818 "Open Sans", Helvetica, Arial, sans-serif;
   letter-spacing: 0.075em;
   text-transform: uppercase;
   -webkit-margin-end: 0.75rem;
@@ -1441,7 +1441,7 @@ h6 {
   white-space: nowrap; }
 
 .Tree-title {
-  font: normal 0.6875rem / 1.81818 "Open Sans", Helvetica, Arial, sans-serif;
+  font: bold 0.6875rem / 1.81818 "Open Sans", Helvetica, Arial, sans-serif;
   letter-spacing: 0.075em;
   text-transform: uppercase;
   -webkit-padding-start: 1rem;
@@ -1480,9 +1480,9 @@ h6 {
     -webkit-padding-start: 0.75rem;
        -moz-padding-start: 0.75rem;
             padding-inline-start: 0.75rem;
-    -webkit-margin-start: -2rem;
-       -moz-margin-start: -2rem;
-            margin-inline-start: -2rem;
+    -webkit-margin-start: -1.75rem;
+       -moz-margin-start: -1.75rem;
+            margin-inline-start: -1.75rem;
     display: block;
     position: relative; }
     [dir="ltr"] .Tree-collectionLabel span {
@@ -1490,9 +1490,9 @@ h6 {
     [dir="rtl"] .Tree-collectionLabel span {
       padding-right: 0.75rem; }
     [dir="ltr"] .Tree-collectionLabel span {
-      margin-left: -2rem; }
+      margin-left: -1.75rem; }
     [dir="rtl"] .Tree-collectionLabel span {
-      margin-right: -2rem; }
+      margin-right: -1.75rem; }
   .Tree-collectionLabel span::before {
     offset-inline-start: 0;
     display: inline-block;
@@ -1504,6 +1504,7 @@ h6 {
     background-position: 0 50%;
     width: 0.75rem;
     height: 0.75rem;
+    opacity: 0.5;
     content: ""; }
     [dir="ltr"] .Tree-collectionLabel span::before {
       left: 0; }
@@ -1547,27 +1548,27 @@ h6 {
 
 .Tree-depth-1 .Tree-collectionLabel,
 .Tree-depth-1 .Tree-entityLink {
-  -webkit-padding-start: 1.5rem;
-     -moz-padding-start: 1.5rem;
-          padding-inline-start: 1.5rem; }
+  -webkit-padding-start: 1rem;
+     -moz-padding-start: 1rem;
+          padding-inline-start: 1rem; }
   [dir="ltr"] .Tree-depth-1 .Tree-collectionLabel, [dir="ltr"]
   .Tree-depth-1 .Tree-entityLink {
-    padding-left: 1.5rem; }
+    padding-left: 1rem; }
   [dir="rtl"] .Tree-depth-1 .Tree-collectionLabel, [dir="rtl"]
   .Tree-depth-1 .Tree-entityLink {
-    padding-right: 1.5rem; }
+    padding-right: 1rem; }
 
 .Tree-depth-2 .Tree-collectionLabel,
 .Tree-depth-2 .Tree-entityLink {
-  -webkit-padding-start: 2.25rem;
-     -moz-padding-start: 2.25rem;
-          padding-inline-start: 2.25rem; }
+  -webkit-padding-start: 2rem;
+     -moz-padding-start: 2rem;
+          padding-inline-start: 2rem; }
   [dir="ltr"] .Tree-depth-2 .Tree-collectionLabel, [dir="ltr"]
   .Tree-depth-2 .Tree-entityLink {
-    padding-left: 2.25rem; }
+    padding-left: 2rem; }
   [dir="rtl"] .Tree-depth-2 .Tree-collectionLabel, [dir="rtl"]
   .Tree-depth-2 .Tree-entityLink {
-    padding-right: 2.25rem; }
+    padding-right: 2rem; }
 
 .Tree-depth-3 .Tree-collectionLabel,
 .Tree-depth-3 .Tree-entityLink {
@@ -1583,60 +1584,60 @@ h6 {
 
 .Tree-depth-4 .Tree-collectionLabel,
 .Tree-depth-4 .Tree-entityLink {
-  -webkit-padding-start: 3.75rem;
-     -moz-padding-start: 3.75rem;
-          padding-inline-start: 3.75rem; }
+  -webkit-padding-start: 4rem;
+     -moz-padding-start: 4rem;
+          padding-inline-start: 4rem; }
   [dir="ltr"] .Tree-depth-4 .Tree-collectionLabel, [dir="ltr"]
   .Tree-depth-4 .Tree-entityLink {
-    padding-left: 3.75rem; }
+    padding-left: 4rem; }
   [dir="rtl"] .Tree-depth-4 .Tree-collectionLabel, [dir="rtl"]
   .Tree-depth-4 .Tree-entityLink {
-    padding-right: 3.75rem; }
+    padding-right: 4rem; }
 
 .Tree-depth-5 .Tree-collectionLabel,
 .Tree-depth-5 .Tree-entityLink {
-  -webkit-padding-start: 4.5rem;
-     -moz-padding-start: 4.5rem;
-          padding-inline-start: 4.5rem; }
+  -webkit-padding-start: 5rem;
+     -moz-padding-start: 5rem;
+          padding-inline-start: 5rem; }
   [dir="ltr"] .Tree-depth-5 .Tree-collectionLabel, [dir="ltr"]
   .Tree-depth-5 .Tree-entityLink {
-    padding-left: 4.5rem; }
+    padding-left: 5rem; }
   [dir="rtl"] .Tree-depth-5 .Tree-collectionLabel, [dir="rtl"]
   .Tree-depth-5 .Tree-entityLink {
-    padding-right: 4.5rem; }
+    padding-right: 5rem; }
 
 .Tree-depth-6 .Tree-collectionLabel,
 .Tree-depth-6 .Tree-entityLink {
-  -webkit-padding-start: 5.25rem;
-     -moz-padding-start: 5.25rem;
-          padding-inline-start: 5.25rem; }
-  [dir="ltr"] .Tree-depth-6 .Tree-collectionLabel, [dir="ltr"]
-  .Tree-depth-6 .Tree-entityLink {
-    padding-left: 5.25rem; }
-  [dir="rtl"] .Tree-depth-6 .Tree-collectionLabel, [dir="rtl"]
-  .Tree-depth-6 .Tree-entityLink {
-    padding-right: 5.25rem; }
-
-.Tree-depth-7 .Tree-collectionLabel,
-.Tree-depth-7 .Tree-entityLink {
   -webkit-padding-start: 6rem;
      -moz-padding-start: 6rem;
           padding-inline-start: 6rem; }
+  [dir="ltr"] .Tree-depth-6 .Tree-collectionLabel, [dir="ltr"]
+  .Tree-depth-6 .Tree-entityLink {
+    padding-left: 6rem; }
+  [dir="rtl"] .Tree-depth-6 .Tree-collectionLabel, [dir="rtl"]
+  .Tree-depth-6 .Tree-entityLink {
+    padding-right: 6rem; }
+
+.Tree-depth-7 .Tree-collectionLabel,
+.Tree-depth-7 .Tree-entityLink {
+  -webkit-padding-start: 7rem;
+     -moz-padding-start: 7rem;
+          padding-inline-start: 7rem; }
   [dir="ltr"] .Tree-depth-7 .Tree-collectionLabel, [dir="ltr"]
   .Tree-depth-7 .Tree-entityLink {
-    padding-left: 6rem; }
+    padding-left: 7rem; }
   [dir="rtl"] .Tree-depth-7 .Tree-collectionLabel, [dir="rtl"]
   .Tree-depth-7 .Tree-entityLink {
-    padding-right: 6rem; }
+    padding-right: 7rem; }
 
 .Tree-depth-8 .Tree-collectionLabel,
 .Tree-depth-8 .Tree-entityLink {
-  -webkit-padding-start: 6.75rem;
-     -moz-padding-start: 6.75rem;
-          padding-inline-start: 6.75rem; }
+  -webkit-padding-start: 8rem;
+     -moz-padding-start: 8rem;
+          padding-inline-start: 8rem; }
   [dir="ltr"] .Tree-depth-8 .Tree-collectionLabel, [dir="ltr"]
   .Tree-depth-8 .Tree-entityLink {
-    padding-left: 6.75rem; }
+    padding-left: 8rem; }
   [dir="rtl"] .Tree-depth-8 .Tree-collectionLabel, [dir="rtl"]
   .Tree-depth-8 .Tree-entityLink {
-    padding-right: 6.75rem; }
+    padding-right: 8rem; }

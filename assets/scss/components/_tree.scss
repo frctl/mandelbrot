@@ -42,7 +42,7 @@
 
     span {
         @include padding-inline(start, 0.75rem);
-        @include margin-inline(start, -2rem);
+        @include margin-inline(start, -1.75rem);
         display: block;
         position: relative;
     }
@@ -58,6 +58,7 @@
         background-position: 0 50%;
         width: 0.75rem;
         height: 0.75rem;
+        opacity: 0.5;
         content: "";
     }
 }
@@ -94,7 +95,7 @@
 
 @for $i from 1 through 8 {
     .Tree-depth-#{$i} {
-        $padLeft: 0.75rem + ($i * 0.75rem);
+        $padLeft: ($i * 1rem);
 
         .Tree-collectionLabel,
         .Tree-entityLink {
