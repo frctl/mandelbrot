@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/frctl/mandelbrot/issues"
   },
-  "author": "Clearleft <dev@clearleft.com> (http://clearleft.com/)",
+  "author": "Mark Perkins <mark@clearleft.com> (http://clearleft.com/)",
   "license": "MIT",
   "scripts": {
     "assets": "node ./assets/scss/build.js & gulp"

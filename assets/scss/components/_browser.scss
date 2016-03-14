@@ -35,6 +35,7 @@
 
     svg {
         @include margin-inline(end, 0.125rem);
+        pointer-events: none;
     }
 
     &.is-active {
