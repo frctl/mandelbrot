@@ -25,7 +25,6 @@
 .Browser-tab {
     @include border-inline(start, 0.125rem solid transparent);
     @include border-inline(end, 1px solid $color-alpha-tint-lighter);
-    //box-shadow: inset -1px 0 0 $color-alpha-tint-lighter;
 
     a {
         @include font(navigation);
