@@ -1,8 +1,7 @@
 .Preview {
     position: relative;
     background-color: $color-gamma;
-    outline: solid $color-alpha-tint-light 1px;
-    outline-offset: -1px;
+    border: 1px solid $color-alpha-tint-light;
 
     &.is-disabled {
         .Preview-overlay {
@@ -42,6 +41,7 @@
 
 .Preview-resizer {
     @include offset-inline(start, 0);
+    @include border-inline(end, 1px solid $color-alpha-tint-light);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -51,7 +51,6 @@
     max-width: calc(100% - #{$handle-size});
     min-width: 180px;
     background-color: white;
-    border: 1px solid $color-alpha-tint-light;
     -webkit-overflow-scrolling: touch;
 
     @include mq($until: navCollapse) {
@@ -87,8 +86,7 @@
     z-index: 100;
     height: calc(100% + 2px);
     width: $handle-size;
-    background-color: transparent;
-    background: transparent url("../img/icon-drag--vertical.svg") no-repeat 50% 50%;
+    background: transparent url("../img/icon-drag--vertical.svg") no-repeat 60% 50%;
     background-size: 3px 16px;
     cursor: ew-resize;
 

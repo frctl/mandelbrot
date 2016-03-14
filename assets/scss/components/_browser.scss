@@ -82,11 +82,11 @@
 }
 
 .Browser-files {
-    -webkit-overflow-scrolling: touch;
     flex: 1 1 auto;
     display: flex;
     overflow: auto;
     background-color: $color-gamma;
+    -webkit-overflow-scrolling: touch;
 }
 
 .Browser-fileSelector {

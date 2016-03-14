@@ -16,15 +16,16 @@
 }
 
 .Pen-header {
-    flex: 0 0 auto;
     display: flex;
-    padding: 0.75rem 0;
+    flex: 0 0 auto;
+    max-height: 3rem;
     margin: 0 $handle-size;
+    padding: 0.75rem 0;
     align-items: center;
 
     .Status {
-        @include padding-inline(start, 0.5rem);
         @include margin-inline(start, auto);
+        @include padding-inline(start, 0.5rem);
     }
 
     @include mq($until: navCollapse) {
@@ -67,7 +68,7 @@
 .Pen-preview {
     flex: 0 0 auto;
     height: 50%;
-    max-height: calc(100% - 100px);
+    max-height: calc(100% - 3.75rem);
     margin: 0 $handle-size;
 
     @include mq($until: navCollapse) {

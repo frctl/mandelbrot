@@ -10,7 +10,7 @@
 
     ul,
     ol {
-        @include padding-inline(start, 1.5em);
+        @include padding-inline(start, 1.25em);
     }
 
     li,
@@ -81,6 +81,7 @@
         width: 100%;
         margin: 1rem -0.5rem;
         border-collapse: collapse;
+        font-size: 0.875rem;
         font-feature-settings: "lnum" 1, "tnum" 1;
     }
 
