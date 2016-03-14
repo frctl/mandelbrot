@@ -35,6 +35,11 @@
 }
 
 @mixin dragHandle {
+    &:hover,
+    &:active {
+        background-color: $color-alpha-tint-lightest;
+    }
+
     &.is-disabled {
         pointer-events: none;
         visibility: hidden;

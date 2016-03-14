@@ -925,9 +925,9 @@ h6 {
       max-width: 240px; } }
 
 .Frame-panel--main {
-  -webkit-margin-start: -0.75rem;
-     -moz-margin-start: -0.75rem;
-          margin-inline-start: -0.75rem;
+  -webkit-margin-start: -0.5rem;
+     -moz-margin-start: -0.5rem;
+          margin-inline-start: -0.5rem;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
@@ -936,9 +936,9 @@ h6 {
   z-index: 1;
   overflow: auto; }
   [dir="ltr"] .Frame-panel--main {
-    margin-left: -0.75rem; }
+    margin-left: -0.5rem; }
   [dir="rtl"] .Frame-panel--main {
-    margin-right: -0.75rem; }
+    margin-right: -0.5rem; }
   .Frame-panel--main.is-loading {
     background-image: url("../img/loader.svg");
     background-repeat: no-repeat;
@@ -953,11 +953,13 @@ h6 {
           flex: 0 0 auto;
   position: relative;
   z-index: 2;
-  width: 0.75rem;
-  cursor: ew-resize;
   height: 100%;
+  width: 0.5rem;
   background: transparent url("../img/icon-drag--vertical.svg") no-repeat 50% 45%;
-  background-size: 3px 16px; }
+  background-size: 3px 16px;
+  cursor: ew-resize; }
+  .Frame-handle:hover, .Frame-handle:active {
+    background-color: rgba(46, 48, 56, 0.05); }
   .Frame-handle.is-disabled {
     pointer-events: none;
     visibility: hidden; }
@@ -1065,8 +1067,7 @@ h6 {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   max-height: 3rem;
-  margin: 0 0.75rem;
-  padding: 0.75rem 0;
+  padding: 0.75rem;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -1127,7 +1128,7 @@ h6 {
   height: 50%;
   max-height: -webkit-calc(100% - 3.75rem);
   max-height: calc(100% - 3.75rem);
-  margin: 0 0.75rem; }
+  margin: 0 0.5rem; }
   @media (max-width: 31.24em) {
     .Pen-preview {
       -webkit-box-flex: 1;
@@ -1143,11 +1144,13 @@ h6 {
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  height: 0.75rem;
-  margin: 0 1rem;
-  cursor: ns-resize;
+  height: 0.5rem;
+  margin: 0 0.5rem;
   background: transparent url("../img/icon-drag--horizontal.svg") no-repeat 50% 50%;
-  background-size: 16px 3px; }
+  background-size: 16px 3px;
+  cursor: ns-resize; }
+  .Pen-handle:hover, .Pen-handle:active {
+    background-color: rgba(46, 48, 56, 0.05); }
   .Pen-handle.is-disabled {
     pointer-events: none;
     visibility: hidden; }
@@ -1166,7 +1169,7 @@ h6 {
           flex: 1 1 auto;
   position: relative;
   overflow: hidden;
-  margin: 0.75rem;
+  margin: 0.5rem;
   margin-top: 0;
   border: 1px solid rgba(46, 48, 56, 0.25); }
   @media (max-width: 31.24em) {
@@ -1195,11 +1198,11 @@ h6 {
   bottom: 0;
   height: 100%;
   width: 100%;
-  width: -webkit-calc(100% + 0.75rem);
-  width: calc(100% + 0.75rem);
+  width: -webkit-calc(100% + 0.5rem);
+  width: calc(100% + 0.5rem);
   min-width: 200px;
-  max-width: -webkit-calc(100% + 0.75rem);
-  max-width: calc(100% + 0.75rem);
+  max-width: -webkit-calc(100% + 0.5rem);
+  max-width: calc(100% + 0.5rem);
   background-color: transparent; }
   [dir="ltr"] .Preview-wrapper {
     left: 0; }
@@ -1220,8 +1223,8 @@ h6 {
   width: 100%;
   height: 100%;
   overflow: auto;
-  max-width: -webkit-calc(100% - 0.75rem + 1px);
-  max-width: calc(100% - 0.75rem + 1px);
+  max-width: -webkit-calc(100% - 0.5rem + 1px);
+  max-width: calc(100% - 0.5rem + 1px);
   min-width: 180px;
   background-color: white;
   -webkit-overflow-scrolling: touch; }
@@ -1268,10 +1271,12 @@ h6 {
   z-index: 100;
   height: -webkit-calc(100% + 2px);
   height: calc(100% + 2px);
-  width: 0.75rem;
+  width: 0.5rem;
   background: transparent url("../img/icon-drag--vertical.svg") no-repeat 60% 50%;
   background-size: 3px 16px;
   cursor: ew-resize; }
+  .Preview-handle:hover, .Preview-handle:active {
+    background-color: rgba(46, 48, 56, 0.05); }
   .Preview-handle.is-disabled {
     pointer-events: none;
     visibility: hidden; }

@@ -87,9 +87,9 @@
     flex: 0 0 auto;
     position: relative;
     z-index: 2;
-    width: $handle-size;
-    cursor: ew-resize;
     height: 100%;
+    width: $handle-size;
     background: transparent url("../img/icon-drag--vertical.svg") no-repeat 50% 45%;
     background-size: 3px 16px;
+    cursor: ew-resize;
 }
