@@ -1089,7 +1089,7 @@ h6 {
     .Pen-header {
       margin: 0;
       border-bottom: 1px solid rgba(46, 48, 56, 0.25);
-      padding: 0.75rem 1rem; }
+      padding: 0.75rem; }
       .Pen-header .Status .Status-label {
         position: relative;
         height: 0;
@@ -1173,9 +1173,7 @@ h6 {
       display: none; } }
 
 .Preview {
-  position: relative;
-  background-color: #f7f7f8;
-  border: 1px solid rgba(46, 48, 56, 0.25); }
+  position: relative; }
   .Preview.is-disabled .Preview-overlay {
     display: block; }
   .Preview.is-resizing {
@@ -1184,9 +1182,10 @@ h6 {
     .Preview.is-resizing * {
       cursor: -webkit-grabbing !important;
       cursor: grabbing !important; }
-  @media (max-width: 31.24em) {
+  @media (min-width: 31.25em) {
     .Preview {
-      outline: none; } }
+      background-color: #f7f7f8;
+      border: 1px solid rgba(46, 48, 56, 0.25); } }
 
 .Preview-wrapper {
   offset-inline-start: 0;

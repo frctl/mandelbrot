@@ -31,7 +31,7 @@
     @include mq($until: navCollapse) {
         margin: 0;
         border-bottom: 1px solid $color-alpha-tint-light;
-        padding: 0.75rem 1rem;
+        padding: 0.75rem;
 
         .Status .Status-label {
             position: relative;

@@ -1,7 +1,5 @@
 .Preview {
     position: relative;
-    background-color: $color-gamma;
-    border: 1px solid $color-alpha-tint-light;
 
     &.is-disabled {
         .Preview-overlay {
@@ -17,8 +15,9 @@
         }
     }
 
-    @include mq($until: navCollapse) {
-        outline: none;
+    @include mq(navCollapse) {
+        background-color: $color-gamma;
+        border: 1px solid $color-alpha-tint-light;
     }
 }
 
