@@ -155,6 +155,28 @@
     }
 }
 
+@mixin border-inline-color($position, $color) {
+    @if $position == start {
+        [dir="ltr"] & {
+            border-left-color: $color;
+        }
+        [dir="rtl"] & {
+            border-right-color: $color;
+        }
+        border-inline-start-color: $color;
+    }
+
+    @if $position == end {
+        [dir="ltr"] & {
+            border-right-color: $color;
+        }
+        [dir="rtl"] & {
+            border-left-color: $color;
+        }
+        border-inline-end-color: $color;
+    }
+}
+
 @mixin offset-inline($position, $value: 0) {
     @if $position == start {
         [dir="ltr"] & {

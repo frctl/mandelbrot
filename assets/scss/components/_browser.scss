@@ -23,8 +23,9 @@
 }
 
 .Browser-tab {
-    box-shadow: inset -1px 0 0 $color-alpha-tint-lighter;
-    border-left: 0.125rem solid transparent;
+    @include border-inline(start, 0.125rem solid transparent);
+    @include border-inline(end, 1px solid $color-alpha-tint-lighter);
+    //box-shadow: inset -1px 0 0 $color-alpha-tint-lighter;
 
     a {
         @include font(navigation);
@@ -39,8 +40,9 @@
     }
 
     &.is-active {
+        @include border-inline-color(start, $color-accent);
+        @include border-inline-color(end, $color-alpha-tint-lighter);
         background-color: $color-gamma;
-        border-left-color: $color-accent;
 
         a {
             font-weight: bold;
