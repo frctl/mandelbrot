@@ -14,10 +14,3 @@ $color-delta: hsl($hue, 10, 100);
 
 @import "../core/all";
 @import "../components/**/*.scss";
-
-/**
- * THEME VALUES
- * Accent:     #{$color-accent}
- * Complement: #{$color-complement}
- * Hue:        #{$hue}
- */
