@@ -6,11 +6,11 @@
     background-color: $color-accent;
     box-shadow: 0 2px 2px $color-alpha-tint-light;
     text-overflow: ellipsis;
-    color: white;
+    color: $color-complement;
 }
 
 .Header-title {
-    @include link-default($color-delta, none);
+    @include link-default($color-complement, none);
     padding: 0.75rem 1rem;
     font-size: 1.125rem; // 18px
     line-height: (24 / 18);
@@ -18,16 +18,12 @@
 }
 
 .Header-button {
-    @include border-inline(end, 1px solid $color-alpha-tint-light);
+    @include border-inline(end, 1px solid rgba($color-complement, 0.25));
     display: block;
     border: 0;
     height: 3rem;
     width: 3rem;
     touch-action: manipulation;
-
-    span {
-        @extend %visuallyhidden;
-    }
 
     &:focus,
     &:active {
@@ -44,11 +40,24 @@
 }
 
 .Header-navToggle {
-    background-image: url("../img/icon-close-white.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    svg {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.Header-closeIcon {
+    visibility: hidden;
 
     .is-closed & {
-        background-image: url("../img/icon-menu-white.svg");
+        visibility: visible;
+    }
+}
+
+.Header-menuIcon {
+    visibility: visible;
+
+    .is-closed & {
+        visibility: hidden;
     }
 }

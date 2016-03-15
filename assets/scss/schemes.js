@@ -1,6 +1,13 @@
+'use strict';
 
-$color-accent: #e1b;
-$color-complement: #eaf;
+const fs = require('fs');
+const schemes = require('../schemes.json');
+
+for (let scheme of schemes) {
+    fs.writeFile(`./assets/scss/schemes/${scheme.name}.scss`,
+`
+$color-accent: ${scheme.accent};
+$color-complement: ${scheme.complement};
 
 $hue: hue($color-accent);
 
@@ -14,10 +21,5 @@ $color-delta: hsl($hue, 10, 100);
 
 @import "../core/all";
 @import "../components/**/*.scss";
-
-/**
- * THEME VALUES
- * Accent:     #{$color-accent}
- * Complement: #{$color-complement}
- * Hue:        #{$hue}
- */
+`);
+}

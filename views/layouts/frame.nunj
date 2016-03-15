@@ -8,7 +8,11 @@
     <div class="Frame-header">
         <div class="Header">
             <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
-                <span class="Header-buttonText">Toggle sidebar</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 320 320" role="img" aria-labelledby="title">
+                    <title>Toggle sidebar</title>
+                    <path class="Header-menuIcon" d="M160 148L276 32l12 12-116 116 116 116-12 12-116-116L44 288l-12-12 116-116L32 44l12-12 116 116z"/>
+                    <path class="Header-closeIcon" d="M32 64V48h256v16H32zm0 104v-16h256v16H32zm0 104v-16h256v16H32z"/>
+                </svg>
             </button>
             <a href="/" class="Header-title" data-pjax>{{ frctl.config.project.title | default('Component Library') }}</a>
         </div>

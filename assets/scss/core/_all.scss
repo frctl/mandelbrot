@@ -16,3 +16,44 @@
 @import "../core/mixins.scss";
 @import "../core/fonts.scss";
 @import "../core/foundation.scss";
+
+.color {
+    width: 4rem;
+    height: 4rem;
+}
+
+.color--accent {
+    background-color: $color-accent;
+}
+
+.color--complement {
+    background-color: $color-complement;
+}
+
+.color--alpha {
+    background-color: $color-alpha;
+}
+
+.color--alpha-tint-light {
+    background-color: $color-alpha-tint-light;
+}
+
+.color--alpha-tint-lighter {
+    background-color: $color-alpha-tint-lighter;
+}
+
+.color--alpha-tint-lightest {
+    background-color: $color-alpha-tint-lightest;
+}
+
+.color--beta {
+    background-color: $color-beta;
+}
+
+.color--gamma {
+    background-color: $color-gamma;
+}
+
+.color--delta {
+    background-color: $color-delta;
+}
