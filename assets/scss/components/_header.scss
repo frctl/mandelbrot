@@ -46,18 +46,37 @@
     }
 }
 
-.Header-closeIcon {
-    visibility: hidden;
+.Header-menuIcon {
+    path:nth-child(1) {
+        transform: rotate(-45deg) scaleX(1.3333);
+        transform-origin: bottom left;
+        transition: all 0.1s ease-out;
+    }
 
-    .is-closed & {
-        visibility: visible;
+    path:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+        transform-origin: left center;
+    }
+
+    path:nth-child(3) {
+        transform: rotate(45deg) scaleX(1.3333);
+        transform-origin: top left;
+        transition: all 0.1s ease-out;
     }
 }
 
-.Header-menuIcon {
-    visibility: visible;
+.is-closed .Header-menuIcon {
+    path:nth-child(1) {
+        transform: rotate(0) scaleX(1);
+    }
 
-    .is-closed & {
-        visibility: hidden;
+    path:nth-child(2) {
+        width: 100%;
+        opacity: 1;
+    }
+
+    path:nth-child(3) {
+        transform: rotate(0) scaleX(1);
     }
 }

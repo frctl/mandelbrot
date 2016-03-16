@@ -1060,15 +1060,46 @@ h6 {
   display: block;
   margin: 0 auto; }
 
-.Header-closeIcon {
-  visibility: hidden; }
-  .is-closed .Header-closeIcon {
-    visibility: visible; }
+.Header-menuIcon path:nth-child(1) {
+  -webkit-transform: rotate(-45deg) scaleX(1.3333);
+      -ms-transform: rotate(-45deg) scaleX(1.3333);
+          transform: rotate(-45deg) scaleX(1.3333);
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out; }
 
-.Header-menuIcon {
-  visibility: visible; }
-  .is-closed .Header-menuIcon {
-    visibility: hidden; }
+.Header-menuIcon path:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+  -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+          transform-origin: left center; }
+
+.Header-menuIcon path:nth-child(3) {
+  -webkit-transform: rotate(45deg) scaleX(1.3333);
+      -ms-transform: rotate(45deg) scaleX(1.3333);
+          transform: rotate(45deg) scaleX(1.3333);
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out; }
+
+.is-closed .Header-menuIcon path:nth-child(1) {
+  -webkit-transform: rotate(0) scaleX(1);
+      -ms-transform: rotate(0) scaleX(1);
+          transform: rotate(0) scaleX(1); }
+
+.is-closed .Header-menuIcon path:nth-child(2) {
+  width: 100%;
+  opacity: 1; }
+
+.is-closed .Header-menuIcon path:nth-child(3) {
+  -webkit-transform: rotate(0) scaleX(1);
+      -ms-transform: rotate(0) scaleX(1);
+          transform: rotate(0) scaleX(1); }
 
 .Navigation {
   display: inline-block;
