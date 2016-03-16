@@ -38,6 +38,10 @@
         pointer-events: none;
     }
 
+    a:hover {
+        background-color: $color-alpha-tint-lightest;
+    }
+
     &.is-active {
         @include border-inline-color(start, $color-accent);
         @include border-inline-color(end, $color-alpha-tint-lighter);
@@ -45,6 +49,10 @@
 
         a {
             font-weight: bold;
+        }
+
+        a:hover {
+            background-color: transparent;
         }
     }
 

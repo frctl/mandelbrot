@@ -35,6 +35,8 @@
 }
 
 @mixin dragHandle {
+    transition: all 0.15s ease-out;
+
     &:hover,
     &:active {
         background-color: $color-alpha-tint-lightest;

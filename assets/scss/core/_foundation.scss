@@ -71,11 +71,14 @@ ul {
 
 a {
     color: $color-accent;
+    transition: all 0.15s ease-out;
 
-    &:visited,
-    &:hover,
     &:active {
         color: $color-accent;
+    }
+
+    &:hover {
+        color: darken($color-accent, 15%);
     }
 }
 
@@ -98,7 +101,7 @@ pre {
 
 svg {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: text-bottom;
     fill: currentColor;
 }
 

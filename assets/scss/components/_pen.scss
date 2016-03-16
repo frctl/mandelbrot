@@ -52,16 +52,18 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-
-    a {
-        @include link-default($color-alpha, none);
-    }
 }
 
-.Pen-newWindowLink {
-    margin: 0 0.125rem;
-    position: relative;
-    top: -0.125rem;
+.Pen-previewLink {
+    @include link-default($color-beta, none);
+
+    svg {
+        fill: $color-accent;
+    }
+
+    &:hover svg {
+        fill: darken($color-accent, 15%);
+    }
 }
 
 .Pen-preview {

@@ -547,9 +547,13 @@ ul {
   list-style: none; }
 
 a {
-  color: #aaa; }
-  a:visited, a:hover, a:active {
+  color: #aaa;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+  a:active {
     color: #aaa; }
+  a:hover {
+    color: #848484; }
 
 /**
  * Suppress the focus outline on links that cannot be accessed via keyboard.
@@ -567,7 +571,7 @@ pre {
 
 svg {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: text-bottom;
   fill: currentColor; }
 
 ::-webkit-scrollbar {
@@ -746,6 +750,8 @@ h6 {
       margin-right: 0.125rem; }
     [dir="rtl"] .Browser-tab svg {
       margin-left: 0.125rem; }
+  .Browser-tab a:hover {
+    background-color: rgba(56, 46, 46, 0.05); }
   .Browser-tab.is-active {
     border-inline-start-color: #aaa;
     border-inline-end-color: rgba(56, 46, 46, 0.1);
@@ -760,6 +766,8 @@ h6 {
       border-left-color: rgba(56, 46, 46, 0.1); }
     .Browser-tab.is-active a {
       font-weight: bold; }
+    .Browser-tab.is-active a:hover {
+      background-color: transparent; }
   .Browser-tab.is-disabled a {
     opacity: 0.5; }
 
@@ -989,6 +997,8 @@ h6 {
       display: none; }
 
 .Frame-handle {
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
@@ -1191,14 +1201,16 @@ h6 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
-  .Pen-title a:link, .Pen-title a:visited, .Pen-title a:hover, .Pen-title a:active {
-    color: #382e2e;
-    text-decoration: none; }
 
-.Pen-newWindowLink {
-  margin: 0 0.125rem;
-  position: relative;
-  top: -0.125rem; }
+.Pen-previewLink:link, .Pen-previewLink:visited, .Pen-previewLink:hover, .Pen-previewLink:active {
+  color: #625050;
+  text-decoration: none; }
+
+.Pen-previewLink svg {
+  fill: #aaa; }
+
+.Pen-previewLink:hover svg {
+  fill: #848484; }
 
 .Pen-preview {
   -webkit-box-flex: 0;
@@ -1220,6 +1232,8 @@ h6 {
       margin: 0; } }
 
 .Pen-handle {
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
@@ -1340,6 +1354,8 @@ h6 {
   -webkit-border-start: 1px solid rgba(56, 46, 46, 0.25);
      -moz-border-start: 1px solid rgba(56, 46, 46, 0.25);
           border-inline-start: 1px solid rgba(56, 46, 46, 0.25);
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
   offset-inline-end: 0;
   position: absolute;
   top: -1px;
@@ -1409,7 +1425,7 @@ h6 {
     -webkit-font-feature-settings: "dlig" 1;
             font-feature-settings: "dlig" 1;
     margin-bottom: 1em;
-    opacity: 0.9; }
+    color: #625050; }
   .Prose *:not(hr) + h2 {
     margin-top: 2em; }
   .Prose h3 {
@@ -1538,7 +1554,6 @@ h6 {
   -webkit-padding-start: 1rem;
      -moz-padding-start: 1rem;
           padding-inline-start: 1rem;
-  color: #382e2e;
   margin-bottom: 0.5rem;
   opacity: 0.6; }
   [dir="ltr"] .Tree-title {
@@ -1604,15 +1619,6 @@ h6 {
 .Tree-item {
   font: normal 0.8125rem / 1.53846 "Open Sans", Helvetica, Arial, sans-serif; }
 
-.Tree-entity:hover {
-  background-color: rgba(140, 115, 115, 0.05); }
-  .Tree-entity:hover .Tree-entityLink:link, .Tree-entity:hover .Tree-entityLink:visited, .Tree-entity:hover .Tree-entityLink:hover, .Tree-entity:hover .Tree-entityLink:active {
-    color: #848484;
-    text-decoration: none; }
-
-.Tree-entity.is-current {
-  background-color: rgba(56, 46, 46, 0.05); }
-
 .Tree-entityLink {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1623,18 +1629,20 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 0.375rem;
-  padding-bottom: 0.375rem; }
-  .Tree-entityLink:link, .Tree-entityLink:visited, .Tree-entityLink:hover, .Tree-entityLink:active {
-    color: #aaa;
-    text-decoration: none; }
-  .Tree-entityLink > * + * {
-    -webkit-margin-start: 0.5rem;
-       -moz-margin-start: 0.5rem;
-            margin-inline-start: 0.5rem; }
-    [dir="ltr"] .Tree-entityLink > * + * {
-      margin-left: 0.5rem; }
-    [dir="rtl"] .Tree-entityLink > * + * {
-      margin-right: 0.5rem; }
+  padding-bottom: 0.375rem;
+  text-decoration: none; }
+  .Tree-entityLink:hover {
+    background-color: rgba(56, 46, 46, 0.05); }
+  .is-current .Tree-entityLink {
+    background-color: rgba(56, 46, 46, 0.1); }
+  .Tree-entityLink .Status {
+    -webkit-margin-start: 0.25rem;
+       -moz-margin-start: 0.25rem;
+            margin-inline-start: 0.25rem; }
+    [dir="ltr"] .Tree-entityLink .Status {
+      margin-left: 0.25rem; }
+    [dir="rtl"] .Tree-entityLink .Status {
+      margin-right: 0.25rem; }
 
 .Tree-depth-1 .Tree-collectionLabel,
 .Tree-depth-1 .Tree-entityLink {

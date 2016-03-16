@@ -34,7 +34,7 @@
     h2 {
         @include font(heading);
         margin-bottom: 1em;
-        opacity: 0.9;
+        color: $color-beta;
     }
 
     *:not(hr) + h2 {
