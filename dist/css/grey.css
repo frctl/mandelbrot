@@ -547,13 +547,13 @@ ul {
   list-style: none; }
 
 a {
-  color: #444;
+  color: #28f;
   -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out; }
   a:active {
-    color: #444; }
+    color: #28f; }
   a:hover {
-    color: #1e1e1e; }
+    color: #0062d5; }
 
 /**
  * Suppress the focus outline on links that cannot be accessed via keyboard.

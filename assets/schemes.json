@@ -11,8 +11,8 @@
 },{
     "name": "black",
     "accent": "#111",
-    "complement": "#eee",
-    "links": "#444"
+    "complement": "#fff",
+    "links": "#28f"
 },{
     "name": "blue",
     "accent": "#14f",
@@ -26,13 +26,13 @@
 },{
     "name": "green",
     "accent": "#3c4",
-    "complement": "#131",
-    "links": "#262"
+    "complement": "#fff",
+    "links": "#172"
 },{
     "name": "grey",
     "accent": "#bbb",
     "complement": "#111",
-    "links": "#444"
+    "links": "#28f"
 },{
     "name": "lime",
     "accent": "#bd2",
@@ -60,8 +60,8 @@
     "links": "#840"
 },{
     "name": "purple",
-    "accent": "#80c",
-    "complement": "#fdf",
+    "accent": "#a0c",
+    "complement": "#fff",
     "links": "#608"
 },{
     "name": "red",
@@ -73,6 +73,11 @@
     "accent": "#3dd",
     "complement": "#033",
     "links": "#066"
+},{
+    "name": "white",
+    "accent": "#eee",
+    "complement": "#111",
+    "links": "#28f"
 },{
     "name": "yellow",
     "accent": "#fd0",
