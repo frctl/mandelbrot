@@ -975,9 +975,6 @@ h6 {
       max-width: 240px; } }
 
 .Frame-panel--main {
-  -webkit-margin-start: -0.625rem;
-     -moz-margin-start: -0.625rem;
-          margin-inline-start: -0.625rem;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
@@ -985,10 +982,6 @@ h6 {
   position: relative;
   z-index: 1;
   overflow: auto; }
-  [dir="ltr"] .Frame-panel--main {
-    margin-left: -0.625rem; }
-  [dir="rtl"] .Frame-panel--main {
-    margin-right: -0.625rem; }
   .Frame-panel--main.is-loading {
     background-image: url("../img/loader.svg");
     background-repeat: no-repeat;
@@ -999,6 +992,9 @@ h6 {
 .Frame-handle {
   -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
+  -webkit-margin-end: -0.625rem;
+     -moz-margin-end: -0.625rem;
+          margin-inline-end: -0.625rem;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
@@ -1019,6 +1015,10 @@ h6 {
     .Frame-handle {
       pointer-events: none;
       visibility: hidden; } }
+  [dir="ltr"] .Frame-handle {
+    margin-right: -0.625rem; }
+  [dir="rtl"] .Frame-handle {
+    margin-left: -0.625rem; }
 
 .Header {
   display: -webkit-box;
