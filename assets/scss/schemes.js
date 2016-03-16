@@ -8,6 +8,7 @@ for (let scheme of schemes) {
 `
 $color-accent: ${scheme.accent};
 $color-complement: ${scheme.complement};
+$color-link: ${scheme.links};
 
 $hue: hue($color-accent);
 

@@ -70,15 +70,15 @@ ul {
 }
 
 a {
-    color: $color-accent;
+    color: $color-link;
     transition: all 0.15s ease-out;
 
     &:active {
-        color: $color-accent;
+        color: $color-link;
     }
 
     &:hover {
-        color: darken($color-accent, 15%);
+        color: darken($color-link, 15%);
     }
 }
 

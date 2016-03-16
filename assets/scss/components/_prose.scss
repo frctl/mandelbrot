@@ -113,7 +113,7 @@
         border-bottom: 1px solid $color-alpha-tint-lighter;
     }
 
-    a {
-        @include link-default($color-accent, underline);
-    }
+    // a {
+    //     @include link-default($color-link, underline);
+    // }
 }

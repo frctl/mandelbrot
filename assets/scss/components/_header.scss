@@ -4,7 +4,7 @@
     position: relative;
     z-index: 10;
     background-color: $color-accent;
-    box-shadow: 0 2px 2px $color-alpha-tint-light;
+    box-shadow: inset 0 -1px 0 0 $color-alpha-tint-light, 0 2px 0 $color-alpha-tint-lighter;
     text-overflow: ellipsis;
     color: $color-complement;
 }
@@ -18,7 +18,7 @@
 }
 
 .Header-button {
-    @include border-inline(end, 1px solid rgba($color-complement, 0.25));
+    @include border-inline(end, 1px solid rgba($color-complement, 0.2));
     display: block;
     border: 0;
     height: 3rem;

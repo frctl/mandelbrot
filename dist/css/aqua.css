@@ -547,13 +547,13 @@ ul {
   list-style: none; }
 
 a {
-  color: #7df;
+  color: #06a;
   -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out; }
   a:active {
-    color: #7df; }
+    color: #06a; }
   a:hover {
-    color: #2bcaff; }
+    color: #00385e; }
 
 /**
  * Suppress the focus outline on links that cannot be accessed via keyboard.
@@ -646,7 +646,7 @@ h6 {
   background-color: #7df; }
 
 .color--complement {
-  background-color: #046; }
+  background-color: #035; }
 
 .color--alpha {
   background-color: #2e3638; }
@@ -1032,9 +1032,9 @@ h6 {
   position: relative;
   z-index: 10;
   background-color: #7df;
-  box-shadow: 0 2px 2px rgba(46, 54, 56, 0.25);
+  box-shadow: inset 0 -1px 0 0 rgba(46, 54, 56, 0.25), 0 2px 0 rgba(46, 54, 56, 0.1);
   text-overflow: ellipsis;
-  color: #046; }
+  color: #035; }
 
 .Header-title {
   padding: 0.75rem 1rem;
@@ -1042,13 +1042,13 @@ h6 {
   line-height: 1.33333;
   white-space: nowrap; }
   .Header-title:link, .Header-title:visited, .Header-title:hover, .Header-title:active {
-    color: #046;
+    color: #035;
     text-decoration: none; }
 
 .Header-button {
-  -webkit-border-end: 1px solid rgba(0, 68, 102, 0.25);
-     -moz-border-end: 1px solid rgba(0, 68, 102, 0.25);
-          border-inline-end: 1px solid rgba(0, 68, 102, 0.25);
+  -webkit-border-end: 1px solid rgba(0, 51, 85, 0.2);
+     -moz-border-end: 1px solid rgba(0, 51, 85, 0.2);
+          border-inline-end: 1px solid rgba(0, 51, 85, 0.2);
   display: block;
   border: 0;
   height: 3rem;
@@ -1056,9 +1056,9 @@ h6 {
   -ms-touch-action: manipulation;
       touch-action: manipulation; }
   [dir="ltr"] .Header-button {
-    border-right: 1px solid rgba(0, 68, 102, 0.25); }
+    border-right: 1px solid rgba(0, 51, 85, 0.2); }
   [dir="rtl"] .Header-button {
-    border-left: 1px solid rgba(0, 68, 102, 0.25); }
+    border-left: 1px solid rgba(0, 51, 85, 0.2); }
   .Header-button:focus, .Header-button:active {
     outline: none; }
   .Header-button:hover {
@@ -1482,9 +1482,6 @@ h6 {
   .Prose th {
     background-color: #f7f8f8;
     border-bottom: 1px solid rgba(46, 54, 56, 0.1); }
-  .Prose a:link, .Prose a:visited, .Prose a:hover, .Prose a:active {
-    color: #7df;
-    text-decoration: underline; }
 
 .Status,
 .Status-dots {
