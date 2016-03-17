@@ -753,13 +753,13 @@ h6 {
   .Browser-tab a:hover {
     background-color: rgba(46, 56, 54, 0.05); }
   .Browser-tab.is-active {
-    border-inline-start-color: #276;
+    border-inline-start-color: #054;
     border-inline-end-color: rgba(46, 56, 54, 0.1);
     background-color: #f7f8f8; }
     [dir="ltr"] .Browser-tab.is-active {
-      border-left-color: #276; }
+      border-left-color: #054; }
     [dir="rtl"] .Browser-tab.is-active {
-      border-right-color: #276; }
+      border-right-color: #054; }
     [dir="ltr"] .Browser-tab.is-active {
       border-right-color: rgba(46, 56, 54, 0.1); }
     [dir="rtl"] .Browser-tab.is-active {
@@ -1207,10 +1207,10 @@ h6 {
   text-decoration: none; }
 
 .Pen-previewLink svg {
-  fill: #276; }
+  fill: #054; }
 
 .Pen-previewLink:hover svg {
-  fill: #113c33; }
+  fill: #000907; }
 
 .Pen-preview {
   -webkit-box-flex: 0;

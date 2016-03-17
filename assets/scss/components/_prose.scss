@@ -99,7 +99,7 @@
         padding: 0.75em 0.5rem;
         text-align: start;
 
-        // text-align: start is fully supported for th elements
+        // text-align: start isn't fully supported for th elements
         [dir="ltr"] & { text-align: left; }
         [dir="rtl"] & { text-align: right; }
     }
@@ -112,8 +112,4 @@
         background-color: $color-gamma;
         border-bottom: 1px solid $color-alpha-tint-lighter;
     }
-
-    // a {
-    //     @include link-default($color-link, underline);
-    // }
 }

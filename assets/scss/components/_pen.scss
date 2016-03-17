@@ -58,11 +58,11 @@
     @include link-default($color-beta, none);
 
     svg {
-        fill: $color-accent;
+        fill: $color-link;
     }
 
     &:hover svg {
-        fill: darken($color-accent, 15%);
+        fill: darken($color-link, 15%);
     }
 }
 

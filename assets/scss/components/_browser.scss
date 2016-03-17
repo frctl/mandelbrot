@@ -43,7 +43,7 @@
     }
 
     &.is-active {
-        @include border-inline-color(start, $color-accent);
+        @include border-inline-color(start, $color-link);
         @include border-inline-color(end, $color-alpha-tint-lighter);
         background-color: $color-gamma;
 
