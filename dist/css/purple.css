@@ -644,37 +644,6 @@ h6 {
   font: normal 1rem / 1.5 "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
-.color {
-  width: 4rem;
-  height: 4rem; }
-
-.color--accent {
-  background-color: #a0c; }
-
-.color--complement {
-  background-color: #fff; }
-
-.color--alpha {
-  background-color: #362e38; }
-
-.color--alpha-tint-light {
-  background-color: rgba(54, 46, 56, 0.25); }
-
-.color--alpha-tint-lighter {
-  background-color: rgba(54, 46, 56, 0.1); }
-
-.color--alpha-tint-lightest {
-  background-color: rgba(54, 46, 56, 0.05); }
-
-.color--beta {
-  background-color: #5f5062; }
-
-.color--gamma {
-  background-color: #f8f7f8; }
-
-.color--delta {
-  background-color: white; }
-
 .Browser {
   top: 0;
   right: 0;
