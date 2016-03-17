@@ -38,7 +38,7 @@
         pointer-events: none;
     }
 
-    a:hover {
+    &:hover {
         background-color: $color-alpha-tint-lightest;
     }
 

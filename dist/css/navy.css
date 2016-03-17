@@ -490,6 +490,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 *::after {
   box-sizing: inherit; }
 
+::-moz-selection {
+  background-color: rgba(0, 68, 136, 0.075); }
+
+::selection {
+  background-color: rgba(0, 68, 136, 0.075); }
+
 html {
   position: relative;
   height: 100%;
@@ -750,7 +756,7 @@ h6 {
       margin-right: 0.125rem; }
     [dir="rtl"] .Browser-tab svg {
       margin-left: 0.125rem; }
-  .Browser-tab a:hover {
+  .Browser-tab:hover {
     background-color: rgba(46, 51, 56, 0.05); }
   .Browser-tab.is-active {
     border-inline-start-color: #048;

@@ -4,6 +4,10 @@
     box-sizing: inherit;
 }
 
+::selection {
+    background-color: rgba($color-link, 0.075);
+}
+
 html {
     position: relative;
     height: 100%;
