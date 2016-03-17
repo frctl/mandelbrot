@@ -38,6 +38,10 @@
     touch-action: manipulation;
     user-select: none;
 
+    &:hover {
+        background-color: $color-alpha-tint-lightest;
+    }
+
     span {
         @include padding-inline(start, 0.75rem);
         @include margin-inline(start, -1.75rem);

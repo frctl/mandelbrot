@@ -1584,6 +1584,8 @@ h6 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
+  .Tree-collectionLabel:hover {
+    background-color: rgba(46, 56, 56, 0.05); }
   .Tree-collectionLabel span {
     -webkit-padding-start: 0.75rem;
        -moz-padding-start: 0.75rem;
