@@ -5,8 +5,7 @@ const sass              = require('gulp-sass');
 const sourcemaps        = require('gulp-sourcemaps');
 const autoprefixer      = require('gulp-autoprefixer');
 const sassGlob          = require('gulp-sass-glob');
-const stylelint         = require('gulp-stylelint').default;
-const stylelintReporter = require('gulp-stylelint-console-reporter').default;
+const stylelint         = require('gulp-stylelint');
 const uglify            = require('gulp-uglify');
 const browserify        = require('browserify');
 const watchify          = require('watchify');
@@ -17,7 +16,7 @@ const del               = require('del');
 
 
 // JS
-// 
+//
 gulp.task('js', ['clean:js'], () => compileJS());
 gulp.task('js:watch', () => compileJS(true));
 
@@ -50,10 +49,12 @@ $color-link: ${skin.links};
 gulp.task('css', ['css:clean', 'css:skins'], function() {
   return gulp.src('./assets/scss/skins/*.scss')
     .pipe(stylelint({
-        reporters: [stylelintReporter()]
+        reporters: [{formatter: 'string', console: true}]
     }))
     .pipe(sassGlob())
-    .pipe(sass({includePaths: 'node_modules'}).on('error', sass.logError))
+    .pipe(sass({
+        includePaths: 'node_modules'
+    }).on('error', sass.logError))
     .pipe(autoprefixer({
         browsers: ['last 5 versions']
     }))
@@ -71,7 +72,6 @@ gulp.task('css:watch', function () {
 
 
 // Fonts
-
 gulp.task('fonts', ['fonts:clean'], function() {
    gulp.src('./assets/fonts/**/*').pipe(gulp.dest('./dist/fonts'));
 });
