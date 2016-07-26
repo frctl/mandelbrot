@@ -62,6 +62,12 @@
         font-feature-settings: "c2sc";
     }
 
+    blockquote {
+        @include border-inline(start, solid rgba($color-text, 0.25));
+        @include padding-inline(start, 1em);
+        opacity: 0.75;
+    }
+
     code,
     code pre {
         background-color: rgba($color-text, 0.075);
