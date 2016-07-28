@@ -1,6 +1,5 @@
 {% extends "layouts/doc.nunj"%}
 {% import "macros/status.nunj" as status %}
-{% import "macros/errors.nunj" as errors %}
 
 {% set pathParam = request.params.path %}
 {% set doc = frctl.docs.find('path', pathParam | default('')) %}
@@ -17,6 +16,7 @@
 
 <div class="Prose">
 {% block pageContent %}
+{% import "macros/errors.nunj" as errors %}
 {% if doc %}
     {% set contents = doc.render(null, renderEnv) | async(true) %}
     {% if contents | isError %}
