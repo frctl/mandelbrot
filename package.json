@@ -44,7 +44,7 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "@frctl/fractal": "^1.0.0",
+    "@frctl/fractal": "^1.0.5",
     "lodash": "^4.12.0",
     "js-beautify": "^1.6.2"
   }
