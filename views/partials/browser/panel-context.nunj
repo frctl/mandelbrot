@@ -1,6 +1,6 @@
 <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-{{ entity.id }}-panel-context">
     {% set hasContext = entity.hasContext() | async %}
-    {% if hasContext %}
+    {% if entity.isCollated or hasContext %}
     <code class="Code Code--lang-{{ frctl.theme.get('format') }}">
         <pre>{{ entity.getPreviewContext() | async | format(frctl.theme.get('format')) | highlight(frctl.theme.get('format')) }}</pre>
     </code>
