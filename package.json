@@ -13,6 +13,7 @@
   "author": "Mark Perkins <mark@clearleft.com> (http://clearleft.com/)",
   "license": "MIT",
   "scripts": {
+    "start": "gulp watch",
     "build": "gulp",
     "prepublish": "npm run build"
   },
