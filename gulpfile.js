@@ -7,6 +7,8 @@ const {
     src,
     watch,
 } = require('gulp');
+const cleanCSS          = require('gulp-clean-css');
+const gulpif            = require('gulp-if');
 const sass              = require('gulp-sass');
 const sourcemaps        = require('gulp-sourcemaps');
 const autoprefixer      = require('gulp-autoprefixer');
@@ -58,7 +60,7 @@ $color-link: ${skin.links};
     cb();
 }
 
-function compileCss() {
+function bundleCss(watch) {
     return src('./assets/scss/skins/*.scss')
         .pipe(stylelint({
             reporters: [{formatter: 'string', console: true}]
@@ -68,11 +70,20 @@ function compileCss() {
             includePaths: 'node_modules'
         }).on('error', sass.logError))
         .pipe(autoprefixer())
+        .pipe(gulpif(!watch, cleanCSS()))
         .pipe(sourcemaps.write('.'))
         .pipe(dest('./dist/css'));
 }
 
-const css = series(createCssSkins, compileCss);
+function compileAndMinifyCss() {
+    return bundleCss();
+}
+
+function compileCss() {
+    return bundleCss(true);
+}
+
+const css = series(createCssSkins, compileAndMinifyCss);
 
 exports.css = css;
 
@@ -117,7 +128,7 @@ exports.img = img;
 // Task sets
 //
 function watchFiles() {
-    watch('./assets/scss/**/*.scss', css);
+    watch('./assets/scss/**/*.scss', compileCss);
     bundleJs(true);
     watch('./assets/img/**/*', img);
     watch('./assets/fonts/**/*', fonts);
